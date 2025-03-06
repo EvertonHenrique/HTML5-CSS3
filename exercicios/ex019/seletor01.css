@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /*
-     HTML = id      =  CSS = #
-     HTML = class   =  CSS = .
+     HTML = id      =  CSS = # (só pode um elemento)
+     HTML = class   =  CSS = . (pode vários elementos)
 */
 body {
      background-color: rgb(152, 210, 252);
@@ -38,11 +38,11 @@ h2 {
 }
 
 .avançado {
-     color: #5c5eab8a;
+     color: #cee1f0f7;
 }
 
 .destaque {
-     background-color: #8ce2fc;
+     background-color: #679dad;
 }
 
 p {
