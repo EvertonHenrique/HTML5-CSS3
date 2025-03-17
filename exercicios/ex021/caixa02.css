@@ -8,8 +8,8 @@ body {
 
 header {
      background-color: azure;
-     padding: 10px;
-     margin: 10px;
+     padding: 12px;
+     margin: 12px;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 nav {
      background-color: rgba(34, 37, 38, 0.674);
      padding: 5px;
-     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.281);
+     box-shadow: 2px 1px 4px rgba(213, 203, 203, 0.192);
 
 }
 
@@ -33,6 +33,8 @@ nav > a {
 
 nav > a:hover {
      background-color: rgba(87, 72, 72, 0.186);
+     text-transform: capitalize;
+     text-decoration: underline;
 }
 
 main {
