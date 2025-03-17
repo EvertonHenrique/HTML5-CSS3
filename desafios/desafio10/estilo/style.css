@@ -32,7 +32,7 @@
 
      /* Fontes Personalizadas com Variaveis */
 
-     --fonte-padrão: 'Arial', 'Helvetica', 'New Amsterdam', 'sans-serif';
+     --fonte-padrão: 'Arial', 'Verdana', 'Helvetica', 'sans-serif';
      --fonte-destaque: 'Bebas Neue', 'cursive';
      --fonte-android: 'Android', 'cursive';
      --fonte-letras: 'Open Sans', 'Oswald', 'Roboto', 'Roboto Condensed','sans-serif';
@@ -47,17 +47,15 @@
 body {
      font-family: var(--fonte-padrão);
      background-color: var(--cor0);
+     text-align: justify;
 }
 
-p {
-     margin: 15px, 0px;
-}
 
 header {
      background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
      min-height: 180px;
      text-align: center;
-     padding-top: 40px;
+     padding-top: 50px;
 }
 
 header > h1{
@@ -65,14 +63,14 @@ header > h1{
      font-family: var(--fonte-destaque);
      font-size: 3em;
      margin-bottom: 20px;
-     text-shadow: -3px -2px 9px #074523;
+     text-shadow: -2px 1px 7px #05421f;
      margin: 10px;
 }
 
 header > p {
      color: var(--cor0);
      font-family: var(--fonte-letras);
-     font-size: 1.1em;
+     font-size: 1.2em;
      margin-bottom: 20px;
      max-width: 600px;
      padding-right: 10px;
@@ -83,7 +81,7 @@ header > p {
 nav {
      background-color: var(--cor5);
      color: var(--cor0);
-     padding: 10px;
+     padding: 8px;
      text-align: left;
      
 }
@@ -92,7 +90,7 @@ nav > a {
      color: #c5ebd6;
      text-decoration: none;
      margin-right: 40px;
-     padding: 5px;
+     padding: 8px;
      font-weight: bolder;
      border-radius: 10%;
      text-align: justify;
@@ -109,7 +107,7 @@ main {
      background-color: azure;
      margin: auto;
      margin-bottom: 40px;
-     padding: 25px;
+     padding: 20px;
      text-align: justify;
      box-shadow: 0px 0px 15px rgb(3, 55, 3);
      border-collapse: separate;
@@ -127,16 +125,34 @@ main h1{
 main h2 {
      color: var(--cor4);
      font-family: var(--fonte-android);
+     font-size: 1.1em;
+     background-image: linear-gradient(to right, var(--cor1), transparent);
+     text-indent: 10px;
+     text-overflow: clip;
 }
 
 main p {
      margin: 15px, 0px;
      text-align: justify;
      text-transform: capitalize;
-     text-indent: 5%;
+     text-indent: 30px;
      line-height: 2em;
      font-size: 1em;
 }
+
+main a {
+     text-emphasis: none;
+     padding: 3px 7px;
+     color: var(--cor5);
+     background-color: var(--cor3);
+     text-decoration: none;
+}
+
+main a:hover {
+     text-decoration: underline;
+     color: var(--cor1);
+}
+
 
 main strong {
      background-color: var(--cor4);
@@ -154,6 +170,33 @@ main img.mini-imagem {
      max-width: 400px;
 }
 
+
+aside {
+     background-color: var(--cor3);
+     color: white;
+     padding: 10px;
+     border-radius: 10px;
+}
+
+aside > h3 {
+     background-color: var(--cor2);
+     color: rgba(2, 46, 2, 0.833);
+     margin: -10px -10px 0px -10px;
+     padding: 15px;
+     border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+     list-style-position: inside;
+     columns: 2;
+     text-indent: 5px;
+}
+
+aside > p {
+     padding: 10px;
+}
+
+
 footer {
      background-color: rgb(54, 142, 54);
      color: rgb(106, 255, 79);
@@ -162,8 +205,15 @@ footer {
      text-align: center;
 }
 
+footer a {
+     color: white;
+     font-weight: bolder;
+     text-decoration: none;
+}
+
 
 footer a:hover {
      background-color: rgb(159, 231, 52);
      color: var(--cor4);
+     text-decoration: underline;
 }
